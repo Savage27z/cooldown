@@ -20,13 +20,13 @@ installs on its own does not wait. Cooldown makes it wait.
 
 ```text
 $ npm install typescript@next
-Cooldown: this install needs your OK.
+The Cooldown plugin is holding this install until you approve it:
 - typescript@7.1.0-dev.20261106.1 was published 5 hours ago; Cooldown waits 3 days, the same rule
   Hermes uses for its own dependencies. Older version that has passed the cooldown:
   typescript@7.1.0-dev.20261103.1 (published 3 days ago).
 
 $ pip install mistralai==2.4.6
-Cooldown blocked this install:
+Blocked by the Cooldown plugin before the command ran (nothing was installed):
 - OSV lists mistralai==2.4.6 as malicious (GHSA-wx9m-wx4f-4cmg: Malicious dropper in mistralai
   2.4.6 PyPI package).
 ```

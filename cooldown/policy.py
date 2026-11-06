@@ -141,10 +141,15 @@ def decide(findings: list[Finding], unchecked: list[str]) -> dict | None:
     if unchecked:
         lines.append(f"- Not checked: {', '.join(unchecked)}.")
     if worst == BLOCK:
-        return {"action": "block", "message": "Cooldown blocked this install:\n" + "\n".join(lines)}
+        # Name the plugin and say the command did not run: a live run showed a model crediting npm
+        return {
+            "action": "block",
+            "message": "Blocked by the Cooldown plugin before the command ran (nothing was installed):\n"
+            + "\n".join(lines),
+        }
     names = ",".join(sorted(f.request.name for f in findings if f.level != OK))
     return {
         "action": "approve",
-        "message": "Cooldown: this install needs your OK.\n" + "\n".join(lines),
+        "message": "The Cooldown plugin is holding this install until you approve it:\n" + "\n".join(lines),
         "rule_key": f"cooldown:{names}",
     }
