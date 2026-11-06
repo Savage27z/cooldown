@@ -19,7 +19,7 @@ from datetime import datetime, timezone
 
 from .parse import NPM, PYPI
 
-USER_AGENT = "hermes-cooldown/0.1 (+https://github.com/Savage27z/hermes-cooldown)"
+USER_AGENT = "hermes-cooldown/0.1 (+https://github.com/Savage27z/cooldown)"
 
 
 class NotFound(Exception):

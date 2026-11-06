@@ -9,7 +9,7 @@ description: >-
   the name is not on the registry.
 author: Savage27z
 license: MIT
-homepage: https://github.com/Savage27z/hermes-cooldown
+homepage: https://github.com/Savage27z/cooldown
 requires_hermes: ">=0.23.0"
 tags: [security, supply-chain, npm, pypi]
 provides_tools: []

@@ -41,7 +41,7 @@ hermes plugins install cooldown
 hermes plugins enable cooldown
 ```
 
-Or from this repository: `hermes plugins install https://github.com/Savage27z/hermes-cooldown`.
+Or from this repository: `hermes plugins install https://github.com/Savage27z/cooldown`.
 
 ## Use
 
